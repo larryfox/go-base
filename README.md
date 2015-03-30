@@ -2,6 +2,8 @@
 
 Convert integers to a given base and back again. Accepts bases 2—62. Port of [`rebase-ruby`](https://github.com/larryfox/rebase-ruby).
 
+[![Build Status](https://travis-ci.org/larryfox/go-base.svg?branch=master)](https://travis-ci.org/larryfox/go-base)
+
 ~~~go
 package main
 
