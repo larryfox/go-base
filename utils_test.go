@@ -1,4 +1,4 @@
-package rebase
+package base
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package rebase
+package base
 
 func IsBaseValid(base int) bool {
 	return base > 1 && base < 63

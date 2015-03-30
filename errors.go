@@ -1,4 +1,4 @@
-package rebase
+package base
 
 import (
 	"fmt"
@@ -15,7 +15,7 @@ func (e err) Error() string {
 var (
 	NegativeIntegerError = err{"Integer can't be negative"}
 	EmptyStringError     = err{"String can't be empty"}
-	InvalidBaseError     = newErrorf("Invalid base %d")
+	InvalidBaseError     = newErrorf("Invalid base %d. Base must be greater than 1 and less than 63")
 )
 
 func newErrorf(format string) func(int) error {

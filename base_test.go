@@ -1,13 +1,13 @@
-package rebase
+package base
 
 import (
 	"bytes"
 	"testing"
 )
 
-func TestRebase_Encode(t *testing.T) {
+func TestBase_Encode(t *testing.T) {
 	for base, pair := range pairs {
-		r := New(base)
+		r, _ := New(base)
 		got, err := r.Encode(pair.decoded)
 		if err != nil {
 			t.Fatal(err)
@@ -18,9 +18,9 @@ func TestRebase_Encode(t *testing.T) {
 	}
 }
 
-func TestRebase_Decode(t *testing.T) {
+func TestBase_Decode(t *testing.T) {
 	for base, pair := range pairs {
-		r := New(base)
+		r, _ := New(base)
 		got, err := r.Decode(pair.encoded)
 		if err != nil {
 			t.Fatal(err)
